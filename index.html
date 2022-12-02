@@ -1,4 +1,4 @@
-<html><body><p>Mudah Sample App to check html communication with webkit siwft ios</p><button onclick="myFunction()">Click me</button>
+<html><body><p> LifeFitness Sample to check DeepLinka and UniversalLink </p><button onclick="myFunction()">Click me</button>
     <form>
       <button formaction="https://lfconnect.com/contents/MFP?success=false">UniversalLink</button>
     </form>
@@ -7,14 +7,14 @@
     </form>
     
     <form>
-      <button formaction="lfconnect://MFP?success=false">DeepLinkTrue</button>
+      <button formaction="lfconnect://MFP?success=' + "true"">DeepLinkTrue</button>
     </form>
     <form>
       <button formaction="lfconnect://MFP?success=false">DeepLink</button>
     </form>
     <script>
     function myFunction() {
-        window.location = 'lfconnect://MFP?success=' + "true" + '&age=' + "18";
+        window.location = 'lfconnect://MFP?success=' + "true";
         console.log("called java script");
         
        // webkit.messageHandlers.callbackHandler.postMessage("Hi Mudah i am from remote place")
