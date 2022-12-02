@@ -1,12 +1,16 @@
 <html><body><p>Mudah Sample App to check html communication with webkit siwft ios</p><button onclick="myFunction()">Click me</button>
     <form>
-      <button formaction="https://lfconnect.com/MFP?success=false">UniversalLink</button>
+      <button formaction="https://lfconnect.com/contents/MFP?success=false">UniversalLink</button>
     </form>
     <form>
-      <button formaction=" lfconnect://MFP?success=true">DeepLinkTrue</button>
+      <button formaction="https://google.com/contents/someotherpath?category=series&contentid=1562167825">UniversalLink2</button>
+    </form>
+    
+    <form>
+      <button formaction="lfconnect://MFP?success=true">DeepLinkTrue</button>
     </form>
     <form>
-      <button formaction=" lfconnect://MFP?success=false">DeepLink</button>
+      <button formaction="lfconnect://MFP?success=false">DeepLink</button>
     </form>
     <script>
     function myFunction() {
