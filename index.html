@@ -7,15 +7,17 @@
     </form>
     
     <form>
-      <button formaction="lfconnect://MFP?success=true">DeepLinkTrue</button>
+      <button formaction="lfconnect://MFP?success=false">DeepLinkTrue</button>
     </form>
     <form>
       <button formaction="lfconnect://MFP?success=false">DeepLink</button>
     </form>
     <script>
     function myFunction() {
+        window.location = 'lfconnect://MFP?success=' + "true" + '&age=' + "18";
         console.log("called java script");
-        webkit.messageHandlers.callbackHandler.postMessage("Hi Mudah i am from remote place")
+        
+       // webkit.messageHandlers.callbackHandler.postMessage("Hi Mudah i am from remote place")
         //android code
     }
     </script>
